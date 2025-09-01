@@ -1,0 +1,3 @@
+[submodule "ContratosCommon"]
+	path = ContratosCommon
+	url = https://github.com/ernestoalej/ContratosCommon.git
