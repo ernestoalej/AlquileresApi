@@ -5,10 +5,6 @@ VisualStudioVersion = 17.14.36408.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alquileres.Api", "Alquileres.Api\Alquileres.Api.csproj", "{E9C79AB9-2087-4266-8FD9-C658C0ED939A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ContratosCommon", "ContratosCommon", "{CBA458EA-DFC5-713B-D213-82AAC7A87E69}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContractosCommon.Contracts", "ContratosCommon\ContractosCommon.Contracts\ContractosCommon.Contracts.csproj", "{DE2F327B-D322-4462-A68B-8BD18D0FAFBD}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,24 +27,9 @@ Global
 		{E9C79AB9-2087-4266-8FD9-C658C0ED939A}.Release|x64.Build.0 = Release|Any CPU
 		{E9C79AB9-2087-4266-8FD9-C658C0ED939A}.Release|x86.ActiveCfg = Release|Any CPU
 		{E9C79AB9-2087-4266-8FD9-C658C0ED939A}.Release|x86.Build.0 = Release|Any CPU
-		{DE2F327B-D322-4462-A68B-8BD18D0FAFBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DE2F327B-D322-4462-A68B-8BD18D0FAFBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DE2F327B-D322-4462-A68B-8BD18D0FAFBD}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{DE2F327B-D322-4462-A68B-8BD18D0FAFBD}.Debug|x64.Build.0 = Debug|Any CPU
-		{DE2F327B-D322-4462-A68B-8BD18D0FAFBD}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{DE2F327B-D322-4462-A68B-8BD18D0FAFBD}.Debug|x86.Build.0 = Debug|Any CPU
-		{DE2F327B-D322-4462-A68B-8BD18D0FAFBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DE2F327B-D322-4462-A68B-8BD18D0FAFBD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DE2F327B-D322-4462-A68B-8BD18D0FAFBD}.Release|x64.ActiveCfg = Release|Any CPU
-		{DE2F327B-D322-4462-A68B-8BD18D0FAFBD}.Release|x64.Build.0 = Release|Any CPU
-		{DE2F327B-D322-4462-A68B-8BD18D0FAFBD}.Release|x86.ActiveCfg = Release|Any CPU
-		{DE2F327B-D322-4462-A68B-8BD18D0FAFBD}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{DE2F327B-D322-4462-A68B-8BD18D0FAFBD} = {CBA458EA-DFC5-713B-D213-82AAC7A87E69}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4557C976-3ECF-43C6-962F-C97F28F7E427}
