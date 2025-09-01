@@ -1,3 +1,4 @@
+using ContractosCommon.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Alquileres.Api.Controllers
@@ -6,19 +7,7 @@ namespace Alquileres.Api.Controllers
     [Route("[controller]")]
     public class ActivosWipsController : ControllerBase
     {
-		private static readonly string[] Activos = new[] {
-			"Local Comercial - Av. Bolívar 102",
-			"Galpón Industrial - Zona Sur",
-			"Apartamento Amoblado - Torre Altamira",
-			"Oficina Corporativa - Centro Empresarial Miranda",
-			"Depósito Logístico - Parque Industrial La Yaguara",
-			"Casa Quinta - Urb. El Paraíso",
-			"Terreno Baldío - Sector La Encrucijada",
-			"Estacionamiento Techado - Plaza Central",
-			"Kiosco de Comida - Boulevard Sucre",
-			"Consultorio Médico - Clínica San Rafael"
-		};
-
+		
 		private readonly ILogger<ActivosWipsController> _logger;
 
         public ActivosWipsController(ILogger<ActivosWipsController> logger)
@@ -27,9 +16,16 @@ namespace Alquileres.Api.Controllers
         }
 
 		[HttpGet]
-		public IEnumerable<String> Get()
+		public IActionResult Get()
 		{
-			return Activos.ToList();
+			 var activos = new List<Activo> {
+				new Activo { Id = 1, Nombre = "Activo 1" },
+				new Activo { Id = 2, Nombre = "Activo 2" },
+				new Activo { Id = 3, Nombre = "Activo 3" }
+        	};
+
+			// Retornamos solo los nombres
+			return Ok(activos);
 		}
 	}
 }
